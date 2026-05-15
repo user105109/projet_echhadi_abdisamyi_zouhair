@@ -1,0 +1,25 @@
+# 🚀 Déploiement d'une Architecture Multi-Conteneurs avec Docker
+
+## 📌 Objectif du projet
+
+Ce projet a pour objectif de mettre en place une architecture multi-conteneurs utilisant Docker afin de déployer une application web dynamique.
+
+L’application permet de gérer des informations d’un employé (création / modification / suppression) via une API Node.js, tout en utilisant Redis comme base de données en mémoire.
+
+---
+
+## 🏗️ Architecture
+
+Le projet repose sur deux services principaux :
+
+- 🟦 **Service Web (Node.js + Express)**  
+  Fournit une API REST pour gérer un employé.
+
+- 🟥 **Service Base de données (Redis)**  
+  Stocke les données de manière rapide et persistante.
+
+---
+
+## 🔄 Communication entre services
+
+Le backend Node.js communique avec Redis via le réseau Docker Compose :
